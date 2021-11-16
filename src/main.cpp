@@ -13,6 +13,5 @@ int main(){
     bone.reset();
     ball.reset();
 
-    mrKruz.print();
     mrKruz.loseToy();
 }
