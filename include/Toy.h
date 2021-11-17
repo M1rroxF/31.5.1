@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <utility>
+#include <string>
 #include <vector>
 #include <thread>
 using namespace std;
@@ -12,7 +13,7 @@ class Toy
   public:
     explicit Toy(string _name): name(std::move(_name)) {}
     string getName() { return name; }
-    ~Toy() {}
+    ~Toy() = default;
 };
 
 ///////////////////////////////////////////////////
@@ -28,22 +29,29 @@ class Toy
 class SharedPtrToy
 {
   private:
-    Toy* toy{};
+    Toy* toy;
     int* count;
 
   public:
-    void countPlus() {*count += 1;}
-    //gets
-    Toy* getToy() { return toy; }
-    int* getInt() { return count; }
+    Toy& getToy() { return *toy; }
 
     //starts
-    explicit SharedPtrToy(const string& _name): count(new int (0))
+    SharedPtrToy& operator=(SharedPtrToy& shToy)
     {
+        count = new int(0);
+        toy = new Toy(shToy.toy->getName());
+        return *this;
+    }
+    SharedPtrToy(): count(nullptr), toy(nullptr) {}
+    SharedPtrToy(SharedPtrToy* shToy): toy(shToy->toy) { count = shToy->count; *count+=1; }
+    explicit SharedPtrToy(const string& _name): count(new int (0)) {
         toy = new Toy(_name);
     }
-    explicit SharedPtrToy(SharedPtrToy* _shToy): count(_shToy->getInt()), toy(_shToy->getToy()) { _shToy->countPlus(); }
-    ~SharedPtrToy() = default;
+    ~SharedPtrToy()
+    {
+        delete count;
+        delete toy;
+    }
 
     //functions
     void itDelete()
@@ -51,14 +59,5 @@ class SharedPtrToy
         *count -= 1;
         count = nullptr;
         toy = nullptr;
-    }
-    static void ToDelete(SharedPtrToy* _toy){
-        while (*_toy->getInt() > 0);
-        delete _toy->getInt();
-        delete _toy->getToy();
-        delete _toy;
-    }void reset() {
-        thread c(ToDelete, this);
-        c.detach();
     }
 };

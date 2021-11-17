@@ -21,16 +21,18 @@ iostream
 -
 utility
 -
+string
+-
 vector
 -
 thread
 -
 
-D:/Programming/c++/skillbox/src/main.cpp
+D:/Programming/c++/31.5.1/src/main.cpp
 iostream
 -
 Toy.h
-D:/Programming/c++/skillbox/src/Toy.h
+D:/Programming/c++/31.5.1/src/Toy.h
 Dog.h
-D:/Programming/c++/skillbox/src/Dog.h
+D:/Programming/c++/31.5.1/src/Dog.h
 

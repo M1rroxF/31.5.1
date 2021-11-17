@@ -56,10 +56,10 @@ RM = "D:\bestProgs\CLion\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Programming\c++\skillbox
+CMAKE_SOURCE_DIR = D:\Programming\c++\31.5.1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Programming\c++\skillbox\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Programming\c++\31.5.1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\c++\skillbox\cmake-build-debug\CMakeFiles D:\Programming\c++\skillbox\cmake-build-debug\src\\CMakeFiles\progress.marks
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\c++\skillbox\cmake-build-debug\CMakeFiles 0
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\c++\31.5.1\cmake-build-debug\CMakeFiles D:\Programming\c++\31.5.1\cmake-build-debug\src\\CMakeFiles\progress.marks
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Programming\c++\31.5.1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/skillbox.dir/rule:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/skillbox.dir/rule
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/skillbox.dir/rule
 .PHONY : src/CMakeFiles/skillbox.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ skillbox: src/CMakeFiles/skillbox.dir/rule
 
 # fast build rule for target.
 skillbox/fast:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/build
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/build
 .PHONY : skillbox/fast
 
 main.obj: main.cpp.obj
@@ -134,7 +134,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/main.cpp.obj
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/main.cpp.i
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/main.cpp.s
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\skillbox.dir\build.make src/CMakeFiles/skillbox.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -176,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d D:\Programming\c++\skillbox\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\Programming\c++\31.5.1\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

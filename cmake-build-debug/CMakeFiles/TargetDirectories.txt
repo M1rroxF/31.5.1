@@ -1,5 +1,5 @@
-D:/Programming/c++/skillbox/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Programming/c++/skillbox/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Programming/c++/skillbox/cmake-build-debug/src/CMakeFiles/skillbox.dir
-D:/Programming/c++/skillbox/cmake-build-debug/src/CMakeFiles/edit_cache.dir
-D:/Programming/c++/skillbox/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+D:/Programming/c++/31.5.1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programming/c++/31.5.1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Programming/c++/31.5.1/cmake-build-debug/src/CMakeFiles/skillbox.dir
+D:/Programming/c++/31.5.1/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+D:/Programming/c++/31.5.1/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

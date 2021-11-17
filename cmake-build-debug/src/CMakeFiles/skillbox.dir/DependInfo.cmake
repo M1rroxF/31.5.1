@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Programming/c++/skillbox/src/main.cpp" "D:/Programming/c++/skillbox/cmake-build-debug/src/CMakeFiles/skillbox.dir/main.cpp.obj"
+  "D:/Programming/c++/31.5.1/src/main.cpp" "D:/Programming/c++/31.5.1/cmake-build-debug/src/CMakeFiles/skillbox.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
