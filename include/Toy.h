@@ -38,8 +38,9 @@ class SharedPtrToy
     //starts
     SharedPtrToy& operator=(SharedPtrToy& shToy)
     {
-        count = new int(0);
-        toy = new Toy(shToy.toy->getName());
+        if (this->toy->getName() == shToy.toy->getName()) return *this;
+        count = shToy.count;
+        toy = shToy.toy;
         return *this;
     }
     SharedPtrToy(): count(nullptr), toy(nullptr) {}
@@ -47,10 +48,11 @@ class SharedPtrToy
     explicit SharedPtrToy(const string& _name): count(new int (0)) {
         toy = new Toy(_name);
     }
-    ~SharedPtrToy()
-    {
-        delete count;
-        delete toy;
+    ~SharedPtrToy() {
+        if (*count == 0) {
+            delete count;
+            delete toy;
+        }
     }
 
     //functions
