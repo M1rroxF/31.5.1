@@ -38,7 +38,7 @@ class SharedPtrToy
     //starts
     SharedPtrToy& operator=(SharedPtrToy& shToy)
     {
-        if (this->toy->getName() == shToy.toy->getName()) return *this;
+        if (this == &shToy) return *this;
         count = shToy.count;
         toy = shToy.toy;
         return *this;
